@@ -36,6 +36,7 @@ import c8 from '../../assets/Carousel-03/8.jpg';
 const Carousel = () => {
     return (
         <section className='container mx-auto my-10 px-3 '>
+            <h2 className='text-4xl text-center mb-5 font-semibold'>Carousel Design</h2>
             {/* Carousel 1 */}
             <div className='mb-10 ps-3  md:ps-0'>
                 <Swiper
@@ -73,7 +74,7 @@ const Carousel = () => {
             {/* Carousel 2 */}
             <div className='grid grid-cols-12 gap-5 my-10'>
                 <div className='col-span-12 md:col-span-3 xl:col-span-2 mb-4 md:mb-0'>
-                    <h3 className='text-2xl md:text-4xl lg:text-4xl font-semibold text-center md:text-left'>
+                    <h3 className='text-2xl md:text-4xl lg:text-4xl font-semibold text-center md:text-left text-blue-600'>
                         Here's a showcase of Carousel Design
                     </h3>
                 </div>
