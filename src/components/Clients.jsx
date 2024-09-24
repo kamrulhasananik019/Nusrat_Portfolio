@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import './Clients.css'
 // import required modules
 import { EffectCards } from 'swiper/modules';
 
@@ -16,18 +15,32 @@ import aoleebagency from '../assets/review/aoleebagency.png';
 import walidhasan from '../assets/review/walidhasan.png';
 import sanjidaislam from '../assets/review/Sanjidaislam.png';
 import tanvirislamtarek from '../assets/review/tanvirislamtarek.png';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Clients = () => {
     return (
         <section className='bg-blue-100 py-10'>
             <div className='container mx-auto px-2'>
-                <h2 className='text-xl md:text-4xl text-center mt-10 font-semibold'>What My Clients Say</h2>
-                <div className='mt-5'>
+                <h2 className='text-xl md:text-4xl text-center  font-semibold'>What My Clients Say</h2>
+                <div className=''>
+
                     <Swiper
-                        effect={'cards'}
-                        grabCursor={true}
-                        modules={[EffectCards]}
-                        className="clientsSwiper h-[420px] w-[340px]"
+                        spaceBetween={0}
+                        autoplay={{ delay: 2000 }}
+                        pagination={{ clickable: true }}
+                        modules={[Autoplay, Navigation,Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2, // Mobile
+                            },
+                            768: {
+                                slidesPerView: 3, // Tablet
+                            },
+                            1024: {
+                                slidesPerView: 4, // Small Desktop
+                            },
+
+                        }}
                     >
                         <SwiperSlide><img src={ittadi} alt="Ittadi Mart Review" /></SwiperSlide>
                         <SwiperSlide><img src={mdimran} alt="Md Imran Review" /></SwiperSlide>

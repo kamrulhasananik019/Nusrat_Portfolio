@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import './Carousel.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // Image Imports
@@ -37,67 +36,37 @@ const Carousel = () => {
     return (
         <section className='container mx-auto my-10 px-3 '>
             <h2 className='text-4xl text-center mb-5 font-semibold'>Carousel Design</h2>
-            {/* Carousel 1 */}
-            <div className='mb-10 ps-3  md:ps-0'>
-                <Swiper
-                    spaceBetween={0}
-                    autoplay={{ delay: 2000 }}
-                    pagination={{ clickable: true }}
-                    
-                    modules={[Autoplay, Navigation]}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2, // Mobile
-                        },
-                        768: {
-                            slidesPerView: 3, // Tablet
-                        },
-                        1024: {
-                            slidesPerView: 5, // Small Desktop
-                        },
-                        1280: {
-                            slidesPerView: 8, // Large Desktop
-                        },
-                    }}
-                >
-                    <SwiperSlide><img src={b1} alt="Carousel 1 Image 1" className='object-fill ' /></SwiperSlide>
-                    <SwiperSlide><img src={b2} alt="Carousel 1 Image 2" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b3} alt="Carousel 1 Image 3" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b4} alt="Carousel 1 Image 4" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b5} alt="Carousel 1 Image 5" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b6} alt="Carousel 1 Image 6" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b7} alt="Carousel 1 Image 7" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={b8} alt="Carousel 1 Image 8" className='object-fill' /></SwiperSlide>
-                </Swiper>
-            </div>
-
-            {/* Carousel 2 */}
-            <div className='grid grid-cols-12 gap-5 my-10'>
-                <div className='col-span-12 md:col-span-3 xl:col-span-2 mb-4 md:mb-0'>
-                    <h3 className='text-2xl md:text-4xl lg:text-4xl font-semibold text-center md:text-left text-blue-600'>
-                        Here's a showcase of Carousel Design
-                    </h3>
-                </div>
-                <div className='col-span-12 md:col-span-9 ps-3 xl:col-span-10  md:ps-0'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                {/* Carousel 1 */}
+                <div className=''>
                     <Swiper
-                        spaceBetween={0}
-                        autoplay={{ delay: 2000 }}
-                        modules={[Autoplay, Navigation]}
+                        spaceBetween={20}
+                        autoplay={{ delay: 3000 }}
                         pagination={{ clickable: true }}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 2, // Mobile
-                            },
-                            768: {
-                                slidesPerView: 2, // Tablet
-                            },
-                            1024: {
-                                slidesPerView: 5, // Small Desktop
-                            },
-                            1280: {
-                                slidesPerView: 7, // Large Desktop
-                            },
-                        }}
+                        modules={[Autoplay, Navigation,Pagination]}
+                        slidesPerView={1}
+                    >
+                        <SwiperSlide><img src={b1} alt="Carousel 1 Image 1" className='object-fill ' /></SwiperSlide>
+                        <SwiperSlide><img src={b2} alt="Carousel 1 Image 2" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b3} alt="Carousel 1 Image 3" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b4} alt="Carousel 1 Image 4" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b5} alt="Carousel 1 Image 5" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b6} alt="Carousel 1 Image 6" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b7} alt="Carousel 1 Image 7" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={b8} alt="Carousel 1 Image 8" className='object-fill' /></SwiperSlide>
+                    </Swiper>
+                </div>
+
+                {/* Carousel 2 */}
+
+                <div className=''>
+                    <Swiper
+                        spaceBetween={20}
+                        autoplay={{ delay: 3000 }}
+                        modules={[Autoplay, Navigation,Pagination]}
+                        pagination={{ clickable: true }}
+                        slidesPerView={1}
+
                     >
                         <SwiperSlide><img src={a1} alt="Carousel 2 Image 1" className='object-fill' /></SwiperSlide>
                         <SwiperSlide><img src={a2} alt="Carousel 2 Image 2" className='object-fill' /></SwiperSlide>
@@ -107,40 +76,28 @@ const Carousel = () => {
                         <SwiperSlide><img src={a6} alt="Carousel 2 Image 6" className='object-fill' /></SwiperSlide>
                         <SwiperSlide><img src={a7} alt="Carousel 2 Image 7" className='object-fill' /></SwiperSlide>
                     </Swiper>
-                </div>
-            </div>
 
-            {/* Carousel 3 */}
-            <div className='ps-3 md:ps-0'>
-                <Swiper
-                    spaceBetween={0}
-                    autoplay={{ delay: 2000 }}
-                    modules={[Autoplay, Navigation]}
-                    pagination={{ clickable: true }}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2, // Mobile
-                        },
-                        768: {
-                            slidesPerView: 3, // Tablet
-                        },
-                        1024: {
-                            slidesPerView: 5, // Small Desktop
-                        },
-                        1280: {
-                            slidesPerView: 8, // Large Desktop
-                        },
-                    }}
-                >
-                    <SwiperSlide><img src={c1} alt="Carousel 3 Image 1" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c2} alt="Carousel 3 Image 2" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c3} alt="Carousel 3 Image 3" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c4} alt="Carousel 3 Image 4" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c5} alt="Carousel 3 Image 5" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c6} alt="Carousel 3 Image 6" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c7} alt="Carousel 3 Image 7" className='object-fill' /></SwiperSlide>
-                    <SwiperSlide><img src={c8} alt="Carousel 3 Image 8" className='object-fill' /></SwiperSlide>
-                </Swiper>
+                </div>
+
+                {/* Carousel 3 */}
+                <div >
+                    <Swiper
+                        spaceBetween={20}
+                        autoplay={{ delay: 3000 }}
+                        modules={[Autoplay, Navigation,Pagination]}
+                        pagination={{ clickable: true }}
+                        slidesPerView={1}
+                    >
+                        <SwiperSlide><img src={c1} alt="Carousel 3 Image 1" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c2} alt="Carousel 3 Image 2" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c3} alt="Carousel 3 Image 3" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c4} alt="Carousel 3 Image 4" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c5} alt="Carousel 3 Image 5" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c6} alt="Carousel 3 Image 6" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c7} alt="Carousel 3 Image 7" className='object-fill' /></SwiperSlide>
+                        <SwiperSlide><img src={c8} alt="Carousel 3 Image 8" className='object-fill' /></SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </section>
     );

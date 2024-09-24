@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Custom pagination styles */
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: #cccccc;
+    /* Inactive bullet color */
+    opacity: 1;
+    /* Full opacity for visible bullets */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00aeff;
+    /* Active bullet color */
+}
