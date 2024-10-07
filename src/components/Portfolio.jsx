@@ -72,9 +72,9 @@ const Portfolio = () => {
     ];
 
     return (
-        <section className='bg-blue-100 p-5'>
+        <section className='bg-blue-50 p-5'>
             <div className="container mx-auto py-12 " id='portfolio'>
-                <h2 className="text-3xl font-semibold text-center">My Recent Projects</h2>
+                <h2 className="text-3xl md:text-5xl font-semibold text-center">My Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-5 ">
                     {projects.map((project, index) => (
                         <div key={index} className="rounded shadow-lg">

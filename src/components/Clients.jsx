@@ -19,7 +19,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Clients = () => {
     return (
-        <section className='bg-blue-100 py-10'>
+        <section className='bg-blue-50 py-10'>
             <div className='container mx-auto px-2'>
                 <h2 className='text-xl md:text-4xl text-center  font-semibold'>What My Clients Say</h2>
                 <div className=''>

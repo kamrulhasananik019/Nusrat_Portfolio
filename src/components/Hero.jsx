@@ -13,7 +13,7 @@ const Hero = () => {
                         <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">YOUR VISION,<br /> MY MISSION</h2>
                         <p className="text-base md:text-lg mb-6">Ready to Make Your Brand Shine? Let's Bring Your Vision to Life!  </p>
                         <div className="flex justify-center md:justify-start space-x-4">
-                            <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Book a Call</button>
+                            <a href='' className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Book a Call</a>
                             <button className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white">See My Work</button>
                         </div>
                     </div>

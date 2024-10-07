@@ -21,17 +21,19 @@ const Expertise = () => {
     ];
 
     return (
-        <div className="container mx-auto py-12" id='expertise'>
-            <h2 className="text-3xl font-semibold text-center">My Expertise</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mt-8 p-2">
-                {skills.map((skill) => (
-                    <div key={skill.name} className="border border-cyan-400 rounded w-full shadow-lg flex flex-col items-center p-10">
-                    <img src={skill.icon} width={90} alt="" />
-                        <p className="mt-2 text-center">{skill.name}</p>
-                    </div>
-                ))}
+        <section className='bg-blue-50'>
+            <div className="container mx-auto py-12" id='expertise'>
+                <h2 className="text-3xl md:text-5xl font-semibold text-center">My Expertise</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center mt-8 p-2">
+                    {skills.map((skill) => (
+                        <div key={skill.name} className="border-2 border-blue-500 rounded w-full shadow-lg flex flex-col items-center p-10">
+                            <img src={skill.icon} width={90} alt="" />
+                            <p className="mt-2 text-center">{skill.name}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
