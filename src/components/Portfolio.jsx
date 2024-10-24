@@ -7,7 +7,7 @@ import projects5 from '../assets/portfolio/5.jpg';
 import projects9 from '../assets/portfolio/9.jpg';
 import projects10 from '../assets/portfolio/10.jpg';
 import projects11 from '../assets/portfolio/11.jpg';
-import projects12 from '../assets/portfolio/12.jpg';
+// import projects12 from '../assets/portfolio/12.jpg';
 import projects13 from '../assets/portfolio/13.jpg';
 import projects14 from '../assets/portfolio/14.jpg';
 
@@ -53,11 +53,6 @@ const Portfolio = () => {
             image: projects11,
             title: 'The Branders',
             category: 'Logo Design'
-        },
-        {
-            image: projects12,
-            title: 'Appify',
-            category: 'App Development'
         },
         {
             image: projects13,

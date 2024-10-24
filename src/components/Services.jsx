@@ -2,9 +2,10 @@ import React from 'react';
 import figma from '../assets/experience/figma.png';
 const Services = () => {
     return (
-        <section className='bg-blue-100'>
+        <section className='bg-[#F7F7F7]'>
             <div className='container mx-auto py-10'>
-                <h2 className='text-3xl md:text-5xl font-semibold text-center '>My Services</h2>
+                
+                <h2 className='text-3xl md:text-5xl font-semibold text-center '>My <span className='text-blue-500'>Services</span></h2>
                 <div className='mt-5' >
                     <div className='border-2 border-blue-600 p-5 rounded-md'>
                         <img src={figma} width={50} alt="" />
